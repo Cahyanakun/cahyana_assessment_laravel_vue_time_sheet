@@ -1,0 +1,9 @@
+# OS X
+.DS_Store
+
+# Laravel Specific
+.env
+/vendor
+/node_modules
+/public/storage
+/storage/*.key

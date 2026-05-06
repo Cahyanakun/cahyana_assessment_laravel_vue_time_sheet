@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "user_prompt": "Objective: Create a single-page Dashboard for Time Entry (Form at the top, History at the bottom). Implement reactive forms with Company, Employee, Project, and Task dropdowns. Follow dependency logic for fetching data. Submit button calls POST /api/time-entries. History Section includes columns for Date, Employee, Company, Project, Task, and Hours. Refresh history after success."
+  },
+  {
+    "id": 2,
+    "user_prompt": "Objective: Update the Time Entry form to support Bulk Store (adding multiple rows) and apply Tailwind CSS with a soft, user-friendly UI. Change form state to Array of Objects. Add 'Add Row' and 'Remove Row' buttons. Submit button sends entire array to POST /api/time-entries/bulk. Each row handles its own reactive filtering for dependencies."
+  },
+  {
+    "id": 3,
+    "user_prompt": "For cosmetics: Please add a button or toggle for dark mode and increase the select option padding for entry data from form input."
+  },
+  {
+    "id": 4,
+    "user_prompt": "Please analyze the time entries GET API for detailed view, and add pagination, filtering, and sorting."
+  },
+  {
+    "id": 5,
+    "user_prompt": "Objective: Update the Time Entry History section to support Pagination, Filtering, and Sorting using the API. Update fetchHistory function to accept parameters: page, search, sort_by, and sort_dir. Create a soft-styled pagination bar. Add Search input and 'Filter by Company' dropdown. Make table headers (Date, Hours) clickable for sorting."
+  },
+  {
+    "id": 6,
+    "user_prompt": "Reminder: Stop updating the backend. The backend API is already finished and stable. Only update the Vue 3 files in the frontend folder. Focus 100% on implementing the pagination, filter, and sorting UI logic using the existing API endpoints."
+  },
+  {
+    "id": 7,
+    "user_prompt": "Sorting: Make table headers (like Date or Hours) clickable to toggle sort_by and sort_dir parameters. Pagination: Add 'Previous' and 'Next' buttons using the page parameter. Logic: Ensure every time a filter, sort, or page changes, it triggers axios.get to the existing API."
+  },
+  {
+    "id": 8,
+    "user_prompt": "Objective: Enable sorting on all table columns in the History section. Use sort_by and sort_dir variables. Add visual indicators (arrows) for active sort column. Ensure fetchHistory function includes sorting parameters in axios params."
+  },
+  {
+    "id": 9,
+    "user_prompt": "On the table header, sorting is only allowed for Date and Hours. Please remove the sorting indicators (icons/marks) from all other headers."
+  },
+  {
+    "id": 10,
+    "user_prompt": "Objective: Update the History Table UI to include row numbers and restrict sorting functionality. Add a dynamic row number column using the formula: ((currentPage - 1) * perPage) + index + 1. Only Date and Hours headers should be clickable. Keep soft Tailwind styling."
+  },
+  {
+    "id": 11,
+    "user_prompt": "Objective: Implement an 'Edit' feature using a Modal/Popup in the Time Entry History table. Use reactive isEditModalOpen and editForm state. Fetch dependencies for modal dropdowns based on company_id. Use Tailwind backdrop-blur and soft background. Update via PUT /api/time-entries/{id}. Refresh history on success."
+  },
+  {
+    "id": 12,
+    "user_prompt": "Objective: Refactor the huge App.vue into smaller, reusable components while keeping the logic intact. Split into TimeEntryForm.vue, TimeEntryHistory.vue, and EditEntryModal.vue. Use Props and Emits for communication. Goal: Reduce App.vue to less than 100 lines."
+  },
+  {
+    "id": 13,
+    "user_prompt": "Please analyze the code, starting from the packages and features, and generate/modify a README.md based on the current features, technical stack, and other relevant details."
+  },
+  {
+    "id": 14,
+    "user_prompt": "Please export the conversation history between the user and the AI agent in JSON format. Include only the user prompts and ensure that all sensitive data paths are redacted or removed."
+  }
+]

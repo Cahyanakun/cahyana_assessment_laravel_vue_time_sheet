@@ -1,0 +1,339 @@
+{
+  "info": {
+    "_postman_id": "830cfd4b-bc1d-409b-bab6-2b298ba13ac1",
+    "name": "timesheet_assessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51747362",
+    "_collection_link": "https://go.postman.co/collection/51747362-830cfd4b-bc1d-409b-bab6-2b298ba13ac1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Time entries",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"entries\": [\n        {\n            \"company_id\": 1,\n            \"employee_id\": 1,\n            \"project_id\": 1,\n            \"task_id\": 1,\n            \"date\": \"2026-05-06\",\n            \"hours\": 4.5\n        },\n        {\n            \"company_id\": 1,\n            \"employee_id\": 1,\n            \"project_id\": 1,\n            \"task_id\": 2,\n            \"date\": \"2026-05-06\",\n            \"hours\": 2.0\n        }\n    ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/time-entries",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "time-entries"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'http://localhost:8000/api/time-entries' \\\n--header 'Content-Type: application/json' \\\n--header 'Accept: application/json' \\\n--data '{\n    \"entries\": [\n        {\n            \"company_id\": 1,\n            \"employee_id\": 1,\n            \"project_id\": 1,\n            \"task_id\": 1,\n            \"date\": \"2026-05-06\",\n            \"hours\": 4.5\n        },\n        {\n            \"company_id\": 1,\n            \"employee_id\": 1,\n            \"project_id\": 1,\n            \"task_id\": 2,\n            \"date\": \"2026-05-06\",\n            \"hours\": 2.0\n        }\n    ]\n}'\n"
+      },
+      "response": [
+        {
+          "name": "Time entries",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"entries\": [\n        {\n            \"company_id\": 1,\n            \"employee_id\": 1,\n            \"project_id\": 1,\n            \"task_id\": 1,\n            \"date\": \"2026-05-06\",\n            \"hours\": 4.5\n        },\n        {\n            \"company_id\": 1,\n            \"employee_id\": 1,\n            \"project_id\": 1,\n            \"task_id\": 2,\n            \"date\": \"2026-05-06\",\n            \"hours\": 2.0\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/time-entries",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "time-entries"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "localhost:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.5.0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 05 May 2026 22:31:24 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": [\n        {\n            \"id\": 2,\n            \"company\": {\n                \"id\": 1,\n                \"name\": \"Bruen-Kuphal\"\n            },\n            \"employee\": {\n                \"id\": 1,\n                \"name\": \"Larry Runolfsson\"\n            },\n            \"project\": {\n                \"id\": 1,\n                \"name\": \"User-friendly bi-directional help-desk\"\n            },\n            \"task\": {\n                \"id\": 1,\n                \"name\": \"Pewter Caster\"\n            },\n            \"date\": \"2026-05-06\",\n            \"hours\": \"4.50\",\n            \"created_at\": \"2026-05-05T22:31:24.000000Z\",\n            \"updated_at\": \"2026-05-05T22:31:24.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"company\": {\n                \"id\": 1,\n                \"name\": \"Bruen-Kuphal\"\n            },\n            \"employee\": {\n                \"id\": 1,\n                \"name\": \"Larry Runolfsson\"\n            },\n            \"project\": {\n                \"id\": 1,\n                \"name\": \"User-friendly bi-directional help-desk\"\n            },\n            \"task\": {\n                \"id\": 2,\n                \"name\": \"Podiatrist\"\n            },\n            \"date\": \"2026-05-06\",\n            \"hours\": \"2.00\",\n            \"created_at\": \"2026-05-05T22:31:24.000000Z\",\n            \"updated_at\": \"2026-05-05T22:31:24.000000Z\"\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "History",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/time-entries?per_page=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "time-entries"
+              ],
+              "query": [
+                {
+                  "key": "company_id",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "sort_by",
+                  "value": "date",
+                  "disabled": true
+                },
+                {
+                  "key": "sort_order",
+                  "value": "desc",
+                  "disabled": true
+                },
+                {
+                  "key": "per_page",
+                  "value": "2",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "localhost:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.5.0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 05 May 2026 23:35:39 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Time entries retrieved successfully\",\n    \"data\": {\n        \"items\": [\n            {\n                \"id\": 4,\n                \"company\": {\n                    \"id\": 1,\n                    \"name\": \"Bruen-Kuphal\"\n                },\n                \"employee\": {\n                    \"id\": 1,\n                    \"name\": \"Larry Runolfsson\"\n                },\n                \"project\": {\n                    \"id\": 1,\n                    \"name\": \"User-friendly bi-directional help-desk\"\n                },\n                \"task\": {\n                    \"id\": 1,\n                    \"name\": \"Pewter Caster\"\n                },\n                \"date\": \"2026-05-06\",\n                \"hours\": \"4.50\",\n                \"created_at\": \"2026-05-05T23:02:03.000000Z\",\n                \"updated_at\": \"2026-05-05T23:02:03.000000Z\"\n            },\n            {\n                \"id\": 5,\n                \"company\": {\n                    \"id\": 1,\n                    \"name\": \"Bruen-Kuphal\"\n                },\n                \"employee\": {\n                    \"id\": 1,\n                    \"name\": \"Larry Runolfsson\"\n                },\n                \"project\": {\n                    \"id\": 1,\n                    \"name\": \"User-friendly bi-directional help-desk\"\n                },\n                \"task\": {\n                    \"id\": 2,\n                    \"name\": \"Podiatrist\"\n                },\n                \"date\": \"2026-05-06\",\n                \"hours\": \"2.00\",\n                \"created_at\": \"2026-05-05T23:02:03.000000Z\",\n                \"updated_at\": \"2026-05-05T23:02:03.000000Z\"\n            }\n        ],\n        \"meta\": {\n            \"current_page\": 1,\n            \"per_page\": 2,\n            \"total\": 5,\n            \"last_page\": 3\n        }\n    },\n    \"errors\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get Master Data",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "Get Master Data with Filter company",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/init-data?company_id=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "init-data"
+              ],
+              "query": [
+                {
+                  "key": "company_id",
+                  "value": "3",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "localhost:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.5.0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 06 May 2026 01:31:17 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Initial data retrieved successfully\",\n    \"data\": {\n        \"companies\": [\n            {\n                \"id\": 1,\n                \"name\": \"Hamill, Considine and Reilly\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Schoen-Mills\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Pacocha-DuBuque\"\n            }\n        ],\n        \"employees\": [\n            {\n                \"id\": 1,\n                \"name\": \"Otho Mills DDS\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Magnolia Roob\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Giuseppe Stroman PhD\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Luis Volkman\"\n            }\n        ],\n        \"projects\": [\n            {\n                \"id\": 5,\n                \"name\": \"Polarised mission-critical application\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Extended tertiary synergy\"\n            }\n        ],\n        \"tasks\": [\n            {\n                \"id\": 7,\n                \"name\": \"Log Grader and Scaler\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Fraud Investigator\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Welding Machine Setter\"\n            }\n        ]\n    },\n    \"errors\": null\n}"
+        },
+        {
+          "name": "Get Master Data",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/init-data?company_id=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "init-data"
+              ],
+              "query": [
+                {
+                  "key": "company_id",
+                  "value": "3",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Host",
+              "value": "localhost:8000"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "PHP/8.5.0"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, private"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 06 May 2026 01:31:17 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Initial data retrieved successfully\",\n    \"data\": {\n        \"companies\": [\n            {\n                \"id\": 1,\n                \"name\": \"Hamill, Considine and Reilly\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Schoen-Mills\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Pacocha-DuBuque\"\n            }\n        ],\n        \"employees\": [\n            {\n                \"id\": 1,\n                \"name\": \"Otho Mills DDS\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Magnolia Roob\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Giuseppe Stroman PhD\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Luis Volkman\"\n            }\n        ],\n        \"projects\": [\n            {\n                \"id\": 5,\n                \"name\": \"Polarised mission-critical application\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Extended tertiary synergy\"\n            }\n        ],\n        \"tasks\": [\n            {\n                \"id\": 7,\n                \"name\": \"Log Grader and Scaler\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Fraud Investigator\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Welding Machine Setter\"\n            }\n        ]\n    },\n    \"errors\": null\n}"
+        }
+      ]
+    }
+  ]
+}
