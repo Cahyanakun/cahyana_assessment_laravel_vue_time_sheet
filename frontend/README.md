@@ -41,16 +41,22 @@ The application has been refactored into modular, single-responsibility componen
 
 ## 🛠️ Development Setup
 
-```bash
-# Install dependencies
-npm install
-
-# Start the dev server with HMR
-npm run dev
-
-# Build for production
-npm run build
-```
+1. **Setup environment**:
+   ```bash
+   cp .env.example .env
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start the dev server**:
+   ```bash
+   npm run dev
+   ```
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
 ---
 

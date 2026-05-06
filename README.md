@@ -83,6 +83,7 @@ The project is split into two specialized applications:
 3.  **Setup Frontend**:
     ```bash
     cd frontend
+    cp .env.example .env
     npm install
     npm run dev
     ```
